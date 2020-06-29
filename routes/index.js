@@ -5,3 +5,4 @@ const router=express.Router();
 console.log("router is loaded");
 module.exports=router;
 router.get('/',homeControl.home);
+router.use('/user',require('./user'));
